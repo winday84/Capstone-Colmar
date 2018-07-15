@@ -1,0 +1,733 @@
+/* Universal styles */
+
+html, body {
+    margin : 0;
+    padding : 0;
+    font-size: 16px;
+    background-color: #bdddea;
+}
+
+h1 {
+  font-family: 'Russo+One', 'Roboto', Tahoma;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.3;
+}
+
+h2{
+  font-family: 'Russo+One', 'Roboto', Tahoma;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+h4{
+  font-family: 'roboto', sans-serif, arial;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+h5{
+  font-family: 'roboto', Times, arial;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+
+p{
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+i{
+  padding: 0.5rem;
+}
+
+.container{
+  width: 1200px;
+  height: 100%;
+  margin: 0px auto 0px auto;
+}
+
+  header, footer{
+  height: 4rem;
+  background-color: white;
+}
+
+header{
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+header #tabletMenu{
+  display: none;
+}
+
+header .mobileIcons{
+  display: none;
+}
+
+header nav ul, footer nav ul{
+  font-family: 'Barlow', 'roboto', arial;
+  display: inline-flex;
+}
+
+header nav ul li:hover{
+  font-weight: bold;
+  transform: rotate(15deg);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+header nav ul li:visited{
+  color:#16aa9f;
+}
+
+header nav ul li, footer nav ul li{
+  padding-left: 1.5rem;
+}
+
+.logo{
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 2rem;
+}
+
+.logo span{
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: roboto, sans-serif, arial;
+}
+
+footer{
+ width: 96.7%;
+ height: 5rem;
+ padding: 1rem 1rem 0 1.5rem;
+ font-size: 0.8rem;
+}
+
+footer .terms{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul li:hover{
+  transform: rotate(15deg);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+footer .social{
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+/* Social media icons styling */
+ .fa-facebook:hover{
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.fa-twitter:hover{
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.fa-pinterest:hover{
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.fa-instagram:hover{
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.fa-linkedin:hover{
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.mainBanner{
+  height: 30rem;
+  background-color: hsl(59.1, 83.3%, 83.5%);
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.mainBanner img{
+  width: 56%;
+  height: auto;
+  padding:0rem  1.5rem 0rem 1.5rem;
+}
+
+.mainText{
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  width: 40%;
+  color: #3e2f19;
+}
+
+.mainText h1{
+  padding-top: 10%;
+}
+
+.mainText h4{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.mainText span{
+  padding: 0.5rem 0;
+  background-color: #3e2f19;
+  font-weight: bold;
+  color: white;
+  border-radius: 25px;
+}
+
+.mainText span:active{
+  color: #3e2f19;
+  background-color: white;
+  letter-spacing: 0.1rem;
+}
+
+.storyBanner{
+  display: flex;
+  height: auto;
+  background-color: #e1efed;
+  padding-top: 2rem 0rem 2rem 1.5rem;
+  color: #4e596b;
+}
+
+.storyBanner article{
+  width: 56%;
+  padding: 0rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.storyBanner article img{
+  height: 20rem;
+  padding-top: 2rem;
+}
+
+.storyBanner article h2{
+  padding: 2rem 0 1.5rem 0;
+}
+
+.storyBanner article sub{
+  font-size: 0.8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.storyBanner:hover{
+  color: black;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.upcomingEvents{
+  width: 40%;
+  padding: 2rem 1rem;
+  height: auto;
+}
+
+.event{
+  display: flex;
+  height: 10rem;
+}
+
+.eventImage {
+  width: 35%;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.eventInfo {
+  width: 65%;
+}
+
+.eventInfo p{
+  padding: 0.5rem 0;
+}
+
+.eventInfo p a{
+  text-decoration: none;
+  color: blue;
+}
+
+.learningBanner{
+  height: 51rem;
+  background-color: #c6c6a8;
+  padding: 2rem;
+  color: #171008b3;
+}
+
+.learningBanner .mobileQualificationList{
+  display: none;
+}
+
+.learningBanner h2{
+  text-align: center;
+}
+ .qualifications{
+  padding: 2rem 2.5rem;
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  grid-template-columns: 20.6rem 20.6rem 20.6rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.courses{
+  height: 20rem;
+  width: 100%;
+  background-color: white;
+}
+
+.courseInfo{
+  width: 100%;
+  height: 50%;
+  margin: 0px;
+  background-color: white;
+}
+
+.courseInfo a{
+  color: #171008b3;
+}
+
+.courseInfo a:hover{
+  color: black;
+}
+
+.courseInfo a:visited{
+  color: #704981b3;
+}
+
+.courseInfo h5{
+  padding: 1rem 1rem .5rem 1rem;
+}
+
+.courseInfo p{
+  padding: 0rem 1rem .5rem 1rem;
+}
+
+.courseImage{
+  width:100%;
+  height: 50%;
+  margin: 0px;
+}
+
+#thesisHeading{
+  padding-top: 2rem;
+  text-align: center;
+  background-color: #e1efed;
+  color: #4e596b;
+}
+
+#thesis{
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+#thesis h2, #thesis p, #thesis .upcomingEvents{
+  color: #4e596b;
+}
+
+.storyBanner article video{
+  height: 20rem;
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width:1600px)
+{
+  .container{
+    width: 960px;
+  }
+
+  header{
+    width: 95%;
+  }
+
+  footer{
+    width: 95.5%;
+  }
+
+  .mainBanner{
+    padding-right: 1.5rem;
+  }
+
+  .mainBanner img{
+    width: 55.9%;
+ }
+
+ .mainText h1{
+   padding-top: 15%;
+   font-size: 2.6rem;
+ }
+
+  .qualifications{
+   grid-template-columns: 15.6rem 15.6rem 15.6rem;
+ }
+
+ .courses{
+   height: 17rem;
+ }
+ .courseInfo h5{
+   padding: .5rem .5rem .5rem .8rem;
+ }
+
+ .courseInfo p{
+   padding: 0rem 1rem .5rem 1rem;
+ }
+
+ .learningBanner{
+   height: 45rem;
+}
+
+#thesis{
+  height: 40rem;
+}
+
+@media only screen and (max-width:1024px)
+{
+  .container{
+    width: 770px;
+  }
+
+  header{
+    width: 93.8%;
+  }
+
+  header nav{
+    display: none;
+  }
+
+  header #tabletMenu{
+    display: block;
+    padding-right: 4rem;
+    font-family: 'Roboto', 'Barlow', Tahoma;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-decoration-line: underline;
+    text-align: center;
+    padding: 1rem;
+    margin-right: 2rem;
+  }
+
+  header #tabletMenu:hover{
+    background-color: #e1efed;
+    color: #4e596b;
+    text-align: right;
+    border-radius: 25px;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+
+  footer{
+    width: 94.8%;
+  }
+
+  .mainBanner{
+    height: 20rem;
+  }
+
+  .mainBanner img{
+    width: 60%;
+    height: auto;
+ }
+
+ .mainText h1{
+   padding-top: 0.8rem;
+   font-size: 1.75rem;
+ }
+
+ .mainText h4{
+   padding-top: 10%;
+   padding-bottom: 10%;
+   font-size: 1.25rem;
+ }
+
+.practicingBanner h2, .learningBanner h2, #thesis h2, #thesisHeading{
+  font-size: 1.65rem;
+}
+
+.practicingBanner h5{
+  font-size: 1.1rem;
+}
+
+ .eventImage{
+   height: 7rem;
+ }
+
+  .qualifications{
+   grid-template-columns: 11.7rem 11.7rem 11.7rem;
+ }
+
+ .courses{
+   height: 16rem;
+ }
+
+ .courseInfo h5{
+   font-size: 1rem;
+ }
+
+ .courseInfo p{
+   font-size: 0.8rem;
+ }
+
+ .learningBanner{
+   height: 40rem;
+}
+
+#thesis{
+  height: 30rem;
+}
+
+.storyBanner article video{
+  height: 15rem;
+  padding-top: 2rem;
+}
+
+
+@media only screen and (max-width:768px)
+{
+  .container{
+    width: 100%;
+  }
+
+  header ul li{
+    display: none;
+  }
+
+  .mainBanner{
+    height: auto;
+    flex-direction: column;
+  }
+
+  .mainBanner h4{
+    padding: 2rem;
+  }
+
+  .mainBanner span{
+    width: 10rem;
+    align-self: center;
+  }
+
+  .mainBanner img{
+    width: auto;
+    height: 20rem;
+  }
+
+  .mainText{
+    width: auto;
+    text-align: center;
+  }
+
+  .storyBanner{
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .storyBanner article{
+    width: auto;
+  }
+
+  .upcomingEvents{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .event{
+    display: flex;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .eventImage{
+   height: 7rem;
+  }
+
+  .learningBanner{
+   height: auto;
+  }
+
+  .qualifications{
+   grid-template-columns: 13rem 13rem;
+  }
+
+  .courseImage{
+    height: 70%;
+  }
+
+  .courseInfo{
+    height: 20%;
+  }
+
+  .courseInfo h5{
+   font-size: 1rem;
+   text-align: center;
+  }
+
+  .courseInfo p{
+   display: none;
+  }
+
+  #thesis{
+  height: auto;
+  }
+
+  .storyBanner article video{
+  height: 15rem;
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 480px)
+{
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+
+  .container header{
+    width: 100%;
+    height: 4rem;
+  }
+
+  header #tabletMenu{
+    display: none;
+  }
+
+  header .mobileIcons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  header .logo{
+    display: none;
+  }
+
+.container  .mainBanner{
+    padding-top: 0px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainBanner img{
+    width: 100%;
+  }
+
+  .mainText{
+    width: auto;
+  }
+
+.practicingBanner{
+  height: auto;
+  width: 100%;
+}
+
+.storyBanner article{
+    display: none;
+  }
+
+.upcomingEvents{
+  width: 100%;
+}
+
+  .upcomingEvents .event{
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .event img{
+    width: 70%;
+    height: 68%;
+  }
+
+  .qualifications{
+    display: none;
+  }
+
+  .learningBanner{
+    height: 100%;
+  }
+
+  .learningBanner h2{
+    padding-bottom: 1rem;
+  }
+
+  .learningBanner .mobileQualificationList{
+    display: inline;
+    color: #171008b3;
+    background-color: white;
+  }
+
+  .mobileQualificationList ul li{
+    margin: 0.5rem;
+    background-color: lightgrey;
+    padding: 1rem 0 1.5rem 1rem;
+    font-size: 1rem;
+    font-family: 'roboto', Helvetica, Arial;
+    letter-spacing: 0.2rem;
+  }
+
+  .mobileQualificationList ul li:hover{
+    font-weight: bold;
+    background-color: white;
+    transition: color 0.8s linear 0s;
+  }
+
+  #thesis article{
+      display: block;
+    }
+
+  #thesis{
+    height: auto;
+  }
+
+  #thesisHeading{
+    padding-bottom: 1rem;
+  }
+
+  .upcomingEvents, #thesis h2, #thesis p{
+    display: none;
+  }
+
+  footer nav{
+    display: none;
+  }
+
+
+
+
+}
